@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Montserrat:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+html{
+    font-size: 100%;
+}
+
+/*MAIN AREA*/
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/fundo.png) repeat-x ;
+}
+
+#container{
+    width: 80%;
+    max-width: 1415px;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-area{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFECD;
+    padding: 1rem;
+}
+
+.image-area img{
+    width: 100%;
+}
+
+/*FORM AREA*/
+.form-area{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 2rem;
+}
+
+.form-header{
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-button, .registration-button{
+    display: flex;
+    align-items: center;
+}
+
+.form-button button{
+    margin-left: 0.4rem;
+    background: #FFFECD;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0 1.25rem;
+    cursor: pointer;
+}
+
+.form-button p{
+    font-size: 1rem;
+}
+
+.form-button button:hover, .registration-button button:hover{
+    background-color: #FFFDAD;
+}
+
+.form-button button a, .registration-button a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.form-header h1::after{
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #FFFDAD;
+    position: absolute;
+    border-radius: 0.3rem;
+}
+
+/*FORM GROUP*/
+.form-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.3rem;
+}
+
+.input-box input{
+    border: none;
+    padding: 0.4rem 1rem;
+    margin: 0.6rem 0;
+    box-shadow: 0.75px 0.75px 2px #000;
+}
+
+.input-box input:hover{
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.input-box input::placeholder{
+    color: #000;
+}
+
+/*GENDER GROUP*/
+.gender-box{
+    display: flex;
+}
+
+.gender-input{
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.gender-input input{
+    margin-right: 0.3rem;
+}
+
+.registration-button button{
+    width: 100%;
+    background-color: #FFFECD;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.4rem 0;
+    cursor: pointer;
+}
+
+.input-box label, .gender-input label, .gender-title h4{
+    font-size: 1rem;
+    color: #4d4343;
+    font-weight: 400;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 1220px){
+    .image-area{
+        width: 40%;
+    }
+    .form-area{
+        width: 60%;
+        padding: 1rem;
+    }
+    .gender-box{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1220px){ 
+    .image-area{
+        display: none;
+    }
+    .form-area{
+        width: 100%;  
+    }
+    .form-box{
+        width: 70%;
+    }
+    .gender-box{
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 768px){
+    html{
+        font-size: 90%;
+    }
+    .form-title{
+        font-size: 0.8rem;
+    }
+    .form-button p{
+        display: none;
+    }
+}
+
+@media (max-width: 675px){ 
+    .form-button{
+        margin-left: 1.5rem;
+    }
+    .form-box{
+        width:auto;
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding: 0 2rem 0 0.2rem;
+    }
+    .gender-group{
+        margin: 1rem 0 0 0.2rem;
+    }
+    .gender-box{
+        flex-direction: column;
+    }
+    .gender-input{
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 365px){
+    html{
+        font-size: 80%;
+    }
+}
+
