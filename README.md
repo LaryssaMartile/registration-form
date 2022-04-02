@@ -31,10 +31,10 @@ As I always hear my acquaintances say... "we have to take the first step!"
 </div><br>
 
 ## Concepts Used
-- Creation registration forms
-- Responsivity with css
-- Use of flexbox for float elements
-- Some efects of style to aplicate to labels, placeholder, bottons and inputs.
+- Registration forms creation
+- Responsiveness css
+- Using flexbox for floating elements
+- Some styling effects applied to label, placeholder, buttons and inputs
 
 ---------------------------------------------------------
 **A phrase to encourage us**<br>
